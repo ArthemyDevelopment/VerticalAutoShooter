@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f28af9b03c3940fc9f3b4a5622b041f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Windows/UpdateWizard/UpdateUserActionsPage.cs
+  uploadId: 466736

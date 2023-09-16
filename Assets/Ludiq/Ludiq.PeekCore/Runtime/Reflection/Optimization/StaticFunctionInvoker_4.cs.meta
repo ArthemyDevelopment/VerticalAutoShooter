@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 874cf132a38c4b1c89fd306a55d68c3d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Reflection/Optimization/StaticFunctionInvoker_4.cs
+  uploadId: 466736

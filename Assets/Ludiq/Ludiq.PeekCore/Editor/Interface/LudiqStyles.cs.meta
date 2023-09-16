@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4a22fdb6d005493eb9832e2b6aa24d80
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Interface/LudiqStyles.cs
+  uploadId: 466736

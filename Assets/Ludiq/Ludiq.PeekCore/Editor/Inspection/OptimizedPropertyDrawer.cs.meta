@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 96fcf5b0557f4512a6656fcadbbb6fcd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Inspection/OptimizedPropertyDrawer.cs
+  uploadId: 466736

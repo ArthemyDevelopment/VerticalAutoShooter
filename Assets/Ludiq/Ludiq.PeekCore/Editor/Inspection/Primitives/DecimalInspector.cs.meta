@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 922a0a4199644159a7f3144ccd614e84
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Inspection/Primitives/DecimalInspector.cs
+  uploadId: 466736

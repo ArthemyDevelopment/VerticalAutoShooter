@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 613038d881dc43caaa9b6be1a2d3c1e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Inspection/Primitives/ContinuousNumberDrawer.cs.cs
+  uploadId: 466736

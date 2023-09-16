@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b9701dd37cec4fcf872542147e828bd7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/DotNetDocumentation/System.Web.Routing.xml
+  uploadId: 466736

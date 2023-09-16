@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 64402f7409a94911a9de6678b256d17b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/CodeDom/Nodes/Statements/CodeWhileStatement.cs
+  uploadId: 466736

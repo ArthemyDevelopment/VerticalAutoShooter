@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b1934640ce394023bb4fd8eb2ea56a9a
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Ludiq.PeekCore.Editor.asmdef
+  uploadId: 466736

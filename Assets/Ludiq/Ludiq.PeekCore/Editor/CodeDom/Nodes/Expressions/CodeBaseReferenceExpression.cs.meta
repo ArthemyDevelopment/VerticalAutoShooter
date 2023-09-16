@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e24649794a744317a4cf37940809aab5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/CodeDom/Nodes/Expressions/CodeBaseReferenceExpression.cs
+  uploadId: 466736

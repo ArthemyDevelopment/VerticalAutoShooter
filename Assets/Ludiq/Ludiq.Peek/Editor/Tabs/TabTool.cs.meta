@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3be9f572390d4615849dae826fff03c9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.Peek/Editor/Tabs/TabTool.cs
+  uploadId: 466736

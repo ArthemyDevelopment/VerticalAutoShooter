@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8bae2e2d03c74b75bc44a20fbaf01b48
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Inspection/Special/UnknownEditor.cs
+  uploadId: 466736

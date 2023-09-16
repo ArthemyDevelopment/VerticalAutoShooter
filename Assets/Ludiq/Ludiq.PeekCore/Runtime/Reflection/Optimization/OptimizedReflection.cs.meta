@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 46e1085780044677a8f9a6ed09f5a939
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Reflection/Optimization/OptimizedReflection.cs
+  uploadId: 466736

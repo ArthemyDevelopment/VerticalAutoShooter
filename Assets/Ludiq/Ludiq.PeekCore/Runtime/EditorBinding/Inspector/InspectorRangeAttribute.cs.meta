@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 067e7d7bd82548e6b182e0cb11d31899
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/EditorBinding/Inspector/InspectorRangeAttribute.cs
+  uploadId: 466736

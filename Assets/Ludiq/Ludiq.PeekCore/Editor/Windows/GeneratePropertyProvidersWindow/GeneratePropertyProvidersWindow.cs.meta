@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a70d40bea4024722bb7504a1071708b8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Windows/GeneratePropertyProvidersWindow/GeneratePropertyProvidersWindow.cs
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7bc98dcaed844a699473ed13a3b020a8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/CodeDom/Nodes/Expressions/CodeConditionalExpression.cs
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 50298af042b24e7d85046dd73e6fd2f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/CodeDom/Nodes/Expressions/CodeObjectCreateExpression.cs
+  uploadId: 466736

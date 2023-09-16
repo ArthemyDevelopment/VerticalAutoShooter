@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a1b049c1656a4abdaa4ee3daf724c4f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Reflection/Operators/BitwiseNegationHandler.cs
+  uploadId: 466736

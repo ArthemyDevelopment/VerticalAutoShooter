@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3deedd93d6f84bc2a825f6cee90594c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Interface/Fuzzy/FuzzyOption.cs
+  uploadId: 466736

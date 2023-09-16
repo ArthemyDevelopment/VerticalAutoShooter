@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2acd2a701341b164f9f7835171598b6e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.Peek/Editor/Context/UnityObjectContextMenu.cs
+  uploadId: 466736

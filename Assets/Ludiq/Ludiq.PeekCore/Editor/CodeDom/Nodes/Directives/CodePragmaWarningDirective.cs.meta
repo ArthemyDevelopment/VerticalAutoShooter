@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 44729b3b6a7e4e35b01f20cde1d1cda5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/CodeDom/Nodes/Directives/CodePragmaWarningDirective.cs
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 142b8d412f754207a8ab9908380332ad
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.Peek/Editor/Plugin/PeekPlugin.cs
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 88e18aeb37384a99951f92fdf8255853
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Documentation/XmlDocumentationTagsFastSerializer.cs
+  uploadId: 466736

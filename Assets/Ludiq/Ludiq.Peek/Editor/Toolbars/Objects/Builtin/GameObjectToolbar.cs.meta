@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5a393377d70a41d999dd2eb0c5dbb753
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.Peek/Editor/Toolbars/Objects/Builtin/GameObjectToolbar.cs
+  uploadId: 466736

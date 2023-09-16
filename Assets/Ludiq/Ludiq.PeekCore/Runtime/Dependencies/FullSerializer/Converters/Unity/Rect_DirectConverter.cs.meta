@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e7cbae70aba6431bb0405abfab0ef716
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/FullSerializer/Converters/Unity/Rect_DirectConverter.cs
+  uploadId: 466736

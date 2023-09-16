@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0d53b9722fb944808dfb77ee2696461d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/DotNetDocumentation/System.Windows.Forms.xml
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 68bc1df99d20493c9a4b535faccb1027
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Interface/Dropdowns/DropdownSeparator.cs
+  uploadId: 466736

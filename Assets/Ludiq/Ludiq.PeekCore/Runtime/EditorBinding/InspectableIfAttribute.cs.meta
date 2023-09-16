@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 95cb1a8c7cc5438dbcae541d69a791b7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/EditorBinding/InspectableIfAttribute.cs
+  uploadId: 466736

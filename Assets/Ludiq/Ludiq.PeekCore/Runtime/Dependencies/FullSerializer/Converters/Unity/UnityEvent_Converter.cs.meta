@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 88e6bc31bb784d90bca87d620bb658ab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/FullSerializer/Converters/Unity/UnityEvent_Converter.cs
+  uploadId: 466736

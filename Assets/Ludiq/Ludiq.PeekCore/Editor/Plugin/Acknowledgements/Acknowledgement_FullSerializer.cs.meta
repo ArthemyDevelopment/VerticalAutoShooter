@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c5fbfb51af7f40789bd972c74487d72c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Plugin/Acknowledgements/Acknowledgement_FullSerializer.cs
+  uploadId: 466736

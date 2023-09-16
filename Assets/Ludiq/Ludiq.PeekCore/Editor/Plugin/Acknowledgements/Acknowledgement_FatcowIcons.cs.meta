@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9aad8c73eb844ff89ffd1be76950abb9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Plugin/Acknowledgements/Acknowledgement_FatcowIcons.cs
+  uploadId: 466736

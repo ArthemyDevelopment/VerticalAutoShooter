@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7493730b4db2423ebbb23239b7d0cb57
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/FullSerializer/Reflection/fsReflectionUtility.cs
+  uploadId: 466736

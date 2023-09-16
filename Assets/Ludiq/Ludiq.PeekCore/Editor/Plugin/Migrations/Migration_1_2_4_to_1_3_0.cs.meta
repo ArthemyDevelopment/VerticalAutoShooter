@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 03a4b40fc9b045f18bcf3774f1d55030
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Plugin/Migrations/Migration_1_2_4_to_1_3_0.cs
+  uploadId: 466736

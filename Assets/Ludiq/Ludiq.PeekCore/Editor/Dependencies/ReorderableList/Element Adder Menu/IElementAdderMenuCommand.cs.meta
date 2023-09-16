@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: dc32f55aba3c4b509df9a37d99372c4f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Dependencies/ReorderableList/Element
+    Adder Menu/IElementAdderMenuCommand.cs
+  uploadId: 466736

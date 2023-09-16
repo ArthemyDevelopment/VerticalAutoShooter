@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cc4001e7a14f4c0f82039b19172e329f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Interface/Fuzzy/FuzzySeparator.cs
+  uploadId: 466736

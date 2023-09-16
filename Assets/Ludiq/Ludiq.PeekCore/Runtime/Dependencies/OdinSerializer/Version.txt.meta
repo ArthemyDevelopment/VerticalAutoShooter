@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4d95e4ad96a094444aa35de04380b767
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Runtime/Dependencies/OdinSerializer/Version.txt
+  uploadId: 466736

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4dbf3be3535447459b977bd3c389cc8b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Dependencies/ReflectionMagic/DynamicField.cs
+  uploadId: 466736

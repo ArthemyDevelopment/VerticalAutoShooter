@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 73337e2a3afb8c54cb2dc3e0adb3083a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.Peek/Editor/Plugin/Changelogs/Changelog_1_1_9.cs
+  uploadId: 466736

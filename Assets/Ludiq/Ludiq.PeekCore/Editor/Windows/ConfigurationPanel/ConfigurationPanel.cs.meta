@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d91a9eeb9a2547b1925e8347702b5bb4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/Editor/Windows/ConfigurationPanel/ConfigurationPanel.cs
+  uploadId: 466736

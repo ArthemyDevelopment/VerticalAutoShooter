@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5a784b0a7f07427aac709ba153d96b80
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149410
+  packageName: Peek - Editor Toolkit
+  packageVersion: 1.4.2
+  assetPath: Assets/Ludiq/Ludiq.PeekCore/DotNetDocumentation/System.Web.Extensions.xml
+  uploadId: 466736

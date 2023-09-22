@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - OutOfScreen
+  - Enemy
+  - ScreenBorder
+  - BottomScreen
   layers:
   - Default
   - TransparentFX
@@ -11,12 +15,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PostProcesing
+  - Player
+  - PlayerBullets
+  - OutScreen
+  - Enemies
+  - PowerUp
   - 
   - 
   - 

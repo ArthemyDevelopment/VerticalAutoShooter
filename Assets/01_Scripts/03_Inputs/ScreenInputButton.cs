@@ -17,12 +17,10 @@ public class ScreenInputButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("test");
         switch (thisInput)
         {
             case InputList.Left:
                 UserInputManager.OnLeftGetInputDown.Invoke();
-                Debug.Log("test1");
                 break;
             case InputList.Right:
                 UserInputManager.OnRightGetInputDown.Invoke();

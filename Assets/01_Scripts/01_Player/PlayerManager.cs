@@ -1,27 +1,44 @@
-using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class PlayerManager : MonoBehaviour
 {
 
-    public PlayerController PC;
+    public PlayerMovementController movementController;
+    public PlayerShootingController shootingController;
     public PlayerStats Stats;
+    public List<PlayerController> playerControllers;
 
     private void OnEnable()
     {
-        PC.InitPlayerStats(Stats);
+        InitPlayerStats();
     }
 
-    void Start()
+
+    void InitPlayerStats()
     {
-        
+        foreach (PlayerController controller in playerControllers)
+        {
+            controller.InitPlayerStats(Stats);
+        }
     }
 
-    
-    void Update()
+    public void ChangeSpeed(float speedModifier)
     {
-        
+        movementController.ApplyModifier(speedModifier);
+    }
+
+    public void ChangeFireRate(float fireRateModifier)
+    {
+        shootingController.ApplyModifier(fireRateModifier);
+    }
+
+    public void ChangeShootingState(PlayerShootingStates state)
+    {
+        shootingController.ChangeShootingState(state);
     }
 }
+
+

@@ -1,8 +1,9 @@
 using System;
 
 using System.Collections.Generic;
-
+using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
 [Serializable]
@@ -43,6 +44,8 @@ public abstract class IShootingState : IPlayerStates
     public PlayerShootingController pc;
 
     public List<ProjectileShooter> ProjectilesShooters;
+
+    [MinValue(0.001f)]public float StateFireRateModifier;
     
     public virtual void OnEnterState(PlayerShootingController controller)
     {
@@ -77,7 +80,7 @@ public class PlayerMovementState : IMovementState
     public override void OnFixedUpdate()
     {
         base.OnFixedUpdate();
-        pc.rb.velocityX = (-HorizontalMove.x + HorizontalMove.y)*pc.ActMoveSpeed;
+        pc.rb.velocityX = (-HorizontalMove.x + HorizontalMove.y)*pc.ActStat;
     }
 
     public void SetPlayerMoveLeft()
@@ -167,7 +170,12 @@ public class PlayerSingleShoot : IShootingState
     public override void OnEnterState(PlayerShootingController controller)
     {
         base.OnEnterState(controller);
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position, pc.actPlayerBullet.transform.rotation, pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
+        GameObject temp = Pools.current.GetObject(pc.actPlayerShooter);
+        temp.transform.position = pc.BulletStartingPoint.position;
+        temp.transform.parent = pc.BulletStartingPoint;
+        temp.transform.rotation=Quaternion.Euler(0,0,0);
+        temp.SetActive(true);
+        ProjectilesShooters.Add(temp.GetComponent<ProjectileShooter>());
         foreach (var shooter in ProjectilesShooters)
         {
             shooter.InitShooter(controller);
@@ -190,7 +198,8 @@ public class PlayerSingleShoot : IShootingState
         for (int i = 0; i < ProjectilesShooters.Count; i++)
         {
             ProjectilesShooters[i].StopShooter();
-            Object.Destroy(ProjectilesShooters[i].gameObject);
+            ProjectilesShooters[i].gameObject.SetActive(false);
+            Pools.current.StoreObject(pc.actPlayerShooter, ProjectilesShooters[i].gameObject);
         }
         ProjectilesShooters.Clear();
     }
@@ -202,8 +211,20 @@ public class PlayerDobleShoot : IShootingState
     public override void OnEnterState(PlayerShootingController controller)
     {
         base.OnEnterState(controller);
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.z + 22.5f)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.z - 22.5f)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
+        GameObject temp = Pools.current.GetObject(pc.actPlayerShooter);
+        temp.transform.position = pc.BulletStartingPoint.position;
+        temp.transform.parent = pc.BulletStartingPoint;
+        temp.transform.rotation=Quaternion.Euler(0,0,22.5f);
+        temp.SetActive(true);
+        
+        GameObject temp1 = Pools.current.GetObject(pc.actPlayerShooter);
+        temp1.transform.position = pc.BulletStartingPoint.position;
+        temp1.transform.parent = pc.BulletStartingPoint;
+        temp1.transform.rotation=Quaternion.Euler(0,0,-22.5f);
+        temp1.SetActive(true);
+        
+        ProjectilesShooters.Add(temp.GetComponent<ProjectileShooter>());
+        ProjectilesShooters.Add(temp1.GetComponent<ProjectileShooter>());
         foreach (var shooter in ProjectilesShooters)
         {
             shooter.InitShooter(controller);
@@ -226,7 +247,8 @@ public class PlayerDobleShoot : IShootingState
         for (int i = 0; i < ProjectilesShooters.Count; i++)
         {
             ProjectilesShooters[i].StopShooter();
-            Object.Destroy(ProjectilesShooters[i].gameObject);
+            ProjectilesShooters[i].gameObject.SetActive(false);
+            Pools.current.StoreObject(pc.actPlayerShooter, ProjectilesShooters[i].gameObject);
         }
         ProjectilesShooters.Clear();
         
@@ -239,9 +261,27 @@ public class PlayerTripleShoot : IShootingState
     public override void OnEnterState(PlayerShootingController controller)
     {
         base.OnEnterState(controller);
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,pc.actPlayerBullet.transform.rotation , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.x + 45)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.x - 45f)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
+        GameObject temp = Pools.current.GetObject(pc.actPlayerShooter);
+        temp.transform.position = pc.BulletStartingPoint.position;
+        temp.transform.parent = pc.BulletStartingPoint;
+        temp.transform.rotation=Quaternion.Euler(0,0,45f);
+        temp.SetActive(true);
+        
+        GameObject temp1 = Pools.current.GetObject(pc.actPlayerShooter);
+        temp1.transform.position = pc.BulletStartingPoint.position;
+        temp1.transform.parent = pc.BulletStartingPoint;
+        temp1.transform.rotation=Quaternion.Euler(0,0,0f);
+        temp1.SetActive(true);
+        
+        GameObject temp2 = Pools.current.GetObject(pc.actPlayerShooter);
+        temp2.transform.position = pc.BulletStartingPoint.position;
+        temp2.transform.parent = pc.BulletStartingPoint;
+        temp2.transform.rotation=Quaternion.Euler(0,0,-45f);
+        temp2.SetActive(true);
+        
+        ProjectilesShooters.Add(temp.GetComponent<ProjectileShooter>());
+        ProjectilesShooters.Add(temp1.GetComponent<ProjectileShooter>());
+        ProjectilesShooters.Add(temp2.GetComponent<ProjectileShooter>());
         foreach (var shooter in ProjectilesShooters)
         {
             shooter.InitShooter(controller);
@@ -264,7 +304,8 @@ public class PlayerTripleShoot : IShootingState
         for (int i = 0; i < ProjectilesShooters.Count; i++)
         {
             ProjectilesShooters[i].StopShooter();
-            Object.Destroy(ProjectilesShooters[i].gameObject);
+            ProjectilesShooters[i].gameObject.SetActive(false);
+            Pools.current.StoreObject(pc.actPlayerShooter, ProjectilesShooters[i].gameObject);
         }
         ProjectilesShooters.Clear();
     }
@@ -276,9 +317,27 @@ public class PlayerSideShoot : IShootingState
     public override void OnEnterState(PlayerShootingController controller)
     {
         base.OnEnterState(controller);
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,pc.actPlayerBullet.transform.rotation , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.x + 90)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
-        ProjectilesShooters.Add(Object.Instantiate(pc.actPlayerBullet, pc.BulletStartingPoint.transform.position,Quaternion.Euler(new Vector3(0,0,pc.actPlayerBullet.transform.rotation.x - 90)) , pc.BulletStartingPoint.transform).GetComponent<ProjectileShooter>());
+        GameObject temp = Pools.current.GetObject(pc.actPlayerShooter);
+        temp.transform.position = pc.BulletStartingPoint.position;
+        temp.transform.parent = pc.BulletStartingPoint;
+        temp.transform.rotation=Quaternion.Euler(0,0,90f);
+        temp.SetActive(true);
+        
+        GameObject temp1 = Pools.current.GetObject(pc.actPlayerShooter);
+        temp1.transform.position = pc.BulletStartingPoint.position;
+        temp1.transform.parent = pc.BulletStartingPoint;
+        temp1.transform.rotation=Quaternion.Euler(0,0,0f);
+        temp1.SetActive(true);
+        
+        GameObject temp2 = Pools.current.GetObject(pc.actPlayerShooter);
+        temp2.transform.position = pc.BulletStartingPoint.position;
+        temp2.transform.parent = pc.BulletStartingPoint;
+        temp2.transform.rotation=Quaternion.Euler(0,0,-90f);
+        temp2.SetActive(true);
+        
+        ProjectilesShooters.Add(temp.GetComponent<ProjectileShooter>());
+        ProjectilesShooters.Add(temp1.GetComponent<ProjectileShooter>());
+        ProjectilesShooters.Add(temp2.GetComponent<ProjectileShooter>());
         foreach (var shooter in ProjectilesShooters)
         {
             shooter.InitShooter(controller);
@@ -301,7 +360,8 @@ public class PlayerSideShoot : IShootingState
         for (int i = 0; i < ProjectilesShooters.Count; i++)
         {
             ProjectilesShooters[i].StopShooter();
-            Object.Destroy(ProjectilesShooters[i].gameObject);
+            ProjectilesShooters[i].gameObject.SetActive(false);
+            Pools.current.StoreObject(pc.actPlayerShooter, ProjectilesShooters[i].gameObject);
         }
         ProjectilesShooters.Clear();
     }

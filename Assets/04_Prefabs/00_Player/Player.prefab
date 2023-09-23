@@ -183,7 +183,9 @@ MonoBehaviour:
   shootingController: {fileID: 7682882234609730150}
   Stats:
     PlayerBaseMoveSpeed: 10
-    PlayerBaseFireRate: 0.1
+    PlayerBaseFireRate: 1
+    PlayerDefaultShooter: 5
+    PlayerDefaultBullet: 0
   playerControllers:
   - {fileID: 5887757055726228201}
   - {fileID: 7682882234609730150}
@@ -199,8 +201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8bb2bf43736244481a9e980bee047d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseMoveSpeed: 0
-  ActMoveSpeed: 0
+  BaseStat: 0
+  LastModifier: 1
+  MinModifierThreashold: 0.5
+  ActStat: 0
   rb: {fileID: 6564676251991201218}
   PlayerMovement:
     pc: {fileID: 0}
@@ -221,21 +225,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08e13bc55700eef47aaa805d9e640eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BaseStat: 0
+  LastModifier: 1
+  MinModifierThreashold: 0.5
+  ActStat: 0
   SingleShootState:
     pc: {fileID: 0}
     ProjectilesShooters: []
+    StateFireRateModifier: 1
   DobleShootState:
     pc: {fileID: 0}
     ProjectilesShooters: []
+    StateFireRateModifier: 0.7
   TripleShootState:
     pc: {fileID: 0}
     ProjectilesShooters: []
+    StateFireRateModifier: 0.5
   SideShootState:
     pc: {fileID: 0}
     ProjectilesShooters: []
-  BaseFireRate: 0
-  ActFireRate: 0
-  actPlayerBullet: {fileID: 465815887332395534, guid: 8420262f4f727134c8f5864591237c69, type: 3}
+    StateFireRateModifier: 0.85
+  StateFireRateModifier: 1
+  actPlayerShooter: 0
+  actPlayerBullet: 5
   BulletStartingPoint: {fileID: 8606145681477219384}
 --- !u!1 &9200350067435356714
 GameObject:

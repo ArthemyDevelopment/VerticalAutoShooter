@@ -6,8 +6,9 @@ using UnityEngine.Events;
 public class EnemyHealthManager : MonoBehaviour
 {
 
-    [BoxGroup("Health Stats"),SerializeField]protected float BaseHealth;
-    [BoxGroup("Health Stats"),SerializeField, ReadOnly]private float _actHealth;
+    [BoxGroup("Stats"),SerializeField]protected Pools_Items thisEnemy_Type;
+    [BoxGroup("Stats"),SerializeField]protected float BaseHealth;
+    [BoxGroup("Stats"),SerializeField, ReadOnly]private float _actHealth;
     public UnityEvent OnEnemyDeath;
 
     #if UNITY_EDITOR
@@ -55,7 +56,7 @@ public class EnemyHealthManager : MonoBehaviour
         if (ActHealth <= 0)
         {
             OnEnemyDeath.Invoke();
-            Destroy(this.gameObject);
+            Pools.current.StoreObject(thisEnemy_Type, this.gameObject);
         }
     }
 

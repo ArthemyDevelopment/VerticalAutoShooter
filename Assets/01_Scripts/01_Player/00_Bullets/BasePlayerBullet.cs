@@ -3,6 +3,7 @@ using UnityEngine;
 
 public abstract class BasePlayerBullet : MonoBehaviour
 {
+    public Pools_Items thisBullet_Type;
     public float Damage;
     public float BulletSpeed;
     public Rigidbody2D rb;
@@ -26,7 +27,7 @@ public abstract class BasePlayerBullet : MonoBehaviour
 
     public virtual void OnHit(EnemyHealthManager ehm)
     {
-        Destroy(this.gameObject);
+        Pools.current.StoreObject(thisBullet_Type,this.gameObject);
         ehm.ApplyDamage(Damage);
     }
 
@@ -37,9 +38,9 @@ public abstract class BasePlayerBullet : MonoBehaviour
             OnHit(other.GetComponent<EnemyHealthManager>());
         }
         
-        else if (other.CompareTag("OutOfScreen"))
+        else if (other.CompareTag("OutOfScreen")||other.CompareTag("ScreenBorder"))
         {
-            Destroy(this.gameObject);
+            Pools.current.StoreObject(thisBullet_Type,this.gameObject);
         }
     }
 }

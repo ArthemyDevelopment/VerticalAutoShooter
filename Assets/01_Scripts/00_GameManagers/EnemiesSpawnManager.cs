@@ -5,14 +5,15 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[DefaultExecutionOrder(-1)]
 public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
 {
-    [BoxGroup("SpawnPoints"),SerializeField] private List<Transform> SpawnPoints;
-    [BoxGroup("SpawnPoints"), SerializeField] private bool CanSpawn;
-    [BoxGroup("SpawnPoints"), SerializeField] private float SpawnRate;
-    private Coroutine SpawnerLoop;
-    [BoxGroup("Enemies")] public List<GameObject> EnemiesToSpawn;
+    [BoxGroup("Stats"),SerializeField] private List<Transform> SpawnPoints;
+    [BoxGroup("Stats"), SerializeField] private bool CanSpawn;
 
+    [BoxGroup("Stats")] public SpawnTier ActSpawnTier;
+
+    private Coroutine SpawnerLoop;
     [FoldoutGroup("DEBUG")][Button] public void DEBUG_InitSpawner(){InitSpawner();}
     [FoldoutGroup("DEBUG")][Button] public void DEBUG_StopSpawner(){StopSpawner();}
 
@@ -38,11 +39,15 @@ public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
     {
         while (CanSpawn)
         {
-            yield return ScriptsTools.GetWait(SpawnRate);
+            yield return ScriptsTools.GetWait(ActSpawnTier.SpawnRate);
             int randPoint = Random.Range(0, SpawnPoints.Count);
-            int randEnemy = Random.Range(0, EnemiesToSpawn.Count);
+            int randEnemy = Random.Range(0, ActSpawnTier.EnemiesToSpawn.Count);
 
-            Instantiate(EnemiesToSpawn[randEnemy], SpawnPoints[randPoint].position, Quaternion.identity);
+            GameObject temp = Pools.current.GetObject(ActSpawnTier.EnemiesToSpawn[randEnemy]);
+            temp.transform.position = SpawnPoints[randPoint].position;
+            temp.SetActive(true);
+            temp.GetComponent<Rigidbody2D>().WakeUp();
+            
         }
     }
 

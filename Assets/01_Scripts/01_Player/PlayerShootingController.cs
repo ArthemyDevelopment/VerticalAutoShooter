@@ -3,6 +3,7 @@ using System.Collections;
 
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerShootingController : PlayerController
 {
@@ -23,15 +24,17 @@ public class PlayerShootingController : PlayerController
         }
     }
     
-    [BoxGroup("Stats")][SerializeField] private float BaseFireRate;
-    [BoxGroup("Stats")]public float ActFireRate;
-    [BoxGroup("Projectiles"), SerializeField] public GameObject actPlayerBullet;
+    [BoxGroup("Stats")][SerializeField] protected float StateFireRateModifier;
+    [BoxGroup("Projectiles"), SerializeField] public Pools_Items actPlayerShooter;
+    [BoxGroup("Projectiles"), SerializeField] public Pools_Items actPlayerBullet;
     [BoxGroup("Projectiles"), SerializeField] public Transform BulletStartingPoint;
 
 
     public override void InitPlayerStats(PlayerStats stats)
     {
-        ActFireRate = BaseFireRate = stats.PlayerBaseFireRate;
+        ActStat = BaseStat = stats.PlayerBaseFireRate;
+        actPlayerBullet = stats.PlayerDefaultBullet;
+        actPlayerShooter = stats.PlayerDefaultShooter;
         ActShootingState = SingleShootState;
     }
 
@@ -41,34 +44,25 @@ public class PlayerShootingController : PlayerController
         {
             case PlayerShootingStates.Single:
                 ActShootingState = SingleShootState;
-                Debug.Log("Set single shoot state");
                 break;
             case PlayerShootingStates.Double:
                 ActShootingState = DobleShootState;
-                Debug.Log("Set doble shoot state");
                 break;
             case PlayerShootingStates.Triple:
                 ActShootingState = TripleShootState;
-                Debug.Log("Set triple shoot state");
                 break;
             case PlayerShootingStates.Side:
                 ActShootingState = SideShootState;
-                Debug.Log("Set side shoot state");
                 break;
         }
-    }
-    
-    public override void ApplyModifier(float modifier)
-    {
-        base.ApplyModifier(modifier);
-        ActFireRate = BaseFireRate * modifier;
+
+        StateFireRateModifier = ActShootingState.StateFireRateModifier;
+        UpdateStat();
     }
 
-    public override void ResetModifier()
+    public override void UpdateStat()
     {
-        base.ResetModifier();
-        ActFireRate = BaseFireRate;
+        ActStat = (BaseStat/StateFireRateModifier) / LastModifier;
     }
-
 
 }

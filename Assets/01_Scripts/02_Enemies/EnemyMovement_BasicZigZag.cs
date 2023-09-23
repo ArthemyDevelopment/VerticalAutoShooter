@@ -1,4 +1,5 @@
 
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -27,7 +28,7 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
     {
         base.Movement();
         MoveVector.y = -Speed;
-        MoveVector.x = HorizontalSpeed;
+        SetSpeed();
         rb.velocity = MoveVector;
     }
 
@@ -56,15 +57,28 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
         {
             case Directions.right:
                 StartPosition = transform.position + Vector3.left * ZigZagDistance;
-                MoveVector.x = -HorizontalSpeed;
                 MoveDir = Directions.left;
+                SetSpeed();
                 rb.velocity = MoveVector;
                 break;
             case Directions.left:
                 StartPosition = transform.position + Vector3.right * ZigZagDistance;
-                MoveVector.x = HorizontalSpeed;
                 MoveDir = Directions.right;
+                SetSpeed();
                 rb.velocity = MoveVector;
+                break;
+        }
+    }
+
+    void SetSpeed()
+    {
+        switch (MoveDir)
+        {
+            case Directions.right:
+                MoveVector.x = HorizontalSpeed;
+                break;
+            case Directions.left:
+                MoveVector.x = -HorizontalSpeed;
                 break;
         }
     }

@@ -108,13 +108,13 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 896
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!60 &5488785790121562999
 PolygonCollider2D:
@@ -129,7 +129,7 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 896
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166db8729cc430c4b8091440e07675c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisEnemy_Type: 9
   BaseHealth: 1
   _actHealth: 0
   OnEnemyDeath:

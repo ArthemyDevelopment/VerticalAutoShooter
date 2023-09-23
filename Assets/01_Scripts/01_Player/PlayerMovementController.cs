@@ -1,13 +1,12 @@
 
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class PlayerMovementController : PlayerController
 {
-    [BoxGroup("PlayerStats")]
-    [BoxGroup("PlayerStats/BaseStats")][SerializeField] private float BaseMoveSpeed;
-    [BoxGroup("PlayerStats/ActStats")]public float ActMoveSpeed;
+
     [BoxGroup("PlayerStats")] public Rigidbody2D rb;
 
 
@@ -31,7 +30,7 @@ public class PlayerMovementController : PlayerController
 
     public override void InitPlayerStats(PlayerStats stats)
     {
-        ActMoveSpeed = BaseMoveSpeed = stats.PlayerBaseMoveSpeed;
+        ActStat = BaseStat = stats.PlayerBaseMoveSpeed;
         SetPlayerMovement();
     }
 
@@ -65,14 +64,9 @@ public class PlayerMovementController : PlayerController
         ActState = PlayerStartingIdle;
         
     }
-
-    public override void ApplyModifier(float modifier)
+    
+    public override void UpdateStat()
     {
-        ActMoveSpeed = BaseMoveSpeed * modifier;
-    }
-
-    public override void ResetModifier()
-    {
-        ActMoveSpeed = BaseMoveSpeed;
+        ActStat = BaseStat  * LastModifier;
     }
 }

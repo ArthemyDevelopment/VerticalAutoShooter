@@ -1,19 +1,38 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 
-[DefaultExecutionOrder(-1)]
-public class ProgressManager : MonoBehaviour
+//[DefaultExecutionOrder(-1)]
+public class ProgressManager : SingletonManager<ProgressManager>
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Dictionary<int, SpawnTier> ProgressSpawn = new Dictionary<int, SpawnTier>();
+
+    private List<int> DicKeys;
+
+    private void OnEnable()
     {
-        
+        DicKeys = new List<int>(ProgressSpawn.Keys);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckProgress(int score)
     {
+        int LevelToCheck = GetKeyToCheck(score);
         
+        if (ProgressSpawn.ContainsKey(LevelToCheck))
+            EnemiesSpawnManager.current.ActSpawnTier = ProgressSpawn[LevelToCheck];
     }
+
+    public int GetKeyToCheck(int score)
+    {
+        for (int i = 0; i < DicKeys.Count; i++)
+        {
+            if (i == DicKeys.Count - 1) return DicKeys[i];
+
+            if (score >= DicKeys[i] && score < DicKeys[i + 1]) return DicKeys[i];
+            
+        }
+
+        return score;
+    }
+    
 }

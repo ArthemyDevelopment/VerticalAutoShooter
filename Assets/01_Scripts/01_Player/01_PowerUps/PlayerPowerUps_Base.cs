@@ -18,7 +18,7 @@ public class PlayerPowerUps_Base : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            ApplyPowerUp(col.GetComponent<PlayerManager>());
+            ApplyPowerUp(PlayerManager.current);
             Destroy(this.gameObject);
         }
         else if(col.CompareTag("BottomScreen"))

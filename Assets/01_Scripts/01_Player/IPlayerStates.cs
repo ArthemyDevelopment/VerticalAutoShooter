@@ -50,7 +50,6 @@ public abstract class IShootingState : IPlayerStates
     public virtual void OnEnterState(PlayerShootingController controller)
     {
         pc = controller;
-        Debug.Log("Entering state "+this);
     }
 
 }

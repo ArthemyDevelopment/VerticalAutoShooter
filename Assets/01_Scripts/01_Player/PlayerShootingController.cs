@@ -5,9 +5,9 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class PlayerShootingController : PlayerController
+public class PlayerShootingController : PlayerStatController
 {
-    
+    [FoldoutGroup("State")] [SerializeField] private float RepeatedStateBuff;
     [FoldoutGroup("State")] private IShootingState _ShootingState;
     [FoldoutGroup("State"),SerializeField] private PlayerSingleShoot SingleShootState;
     [FoldoutGroup("State"),SerializeField] private PlayerDobleShoot DobleShootState;
@@ -35,6 +35,8 @@ public class PlayerShootingController : PlayerController
         ActStat = BaseStat = stats.PlayerBaseFireRate;
         actPlayerBullet = stats.PlayerDefaultBullet;
         actPlayerShooter = stats.PlayerDefaultShooter;
+        RepeatedStateBuff = stats.PlayerRepeatedShootingStateBuff;
+        MinModifierThreashold = stats.MinFireRateModifierThreashold;
         ActShootingState = SingleShootState;
     }
 
@@ -43,16 +45,20 @@ public class PlayerShootingController : PlayerController
         switch (state)
         {
             case PlayerShootingStates.Single:
-                ActShootingState = SingleShootState;
+                if (ActShootingState == SingleShootState) ApplyModifier(RepeatedStateBuff);
+                else ActShootingState = SingleShootState;
                 break;
             case PlayerShootingStates.Double:
-                ActShootingState = DobleShootState;
+                if (ActShootingState == DobleShootState) ApplyModifier(RepeatedStateBuff);
+                else ActShootingState = DobleShootState;
                 break;
             case PlayerShootingStates.Triple:
-                ActShootingState = TripleShootState;
+                if (ActShootingState == TripleShootState) ApplyModifier(RepeatedStateBuff);
+                else ActShootingState = TripleShootState;
                 break;
             case PlayerShootingStates.Side:
-                ActShootingState = SideShootState;
+                if (ActShootingState == SideShootState) ApplyModifier(RepeatedStateBuff);
+                else ActShootingState = SideShootState;
                 break;
         }
 

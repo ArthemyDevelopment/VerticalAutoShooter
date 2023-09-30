@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 
-public class PlayerMovementController : PlayerController
+public class PlayerMovementController : PlayerStatController
 {
 
     [BoxGroup("PlayerStats")] public Rigidbody2D rb;
@@ -31,6 +31,7 @@ public class PlayerMovementController : PlayerController
     public override void InitPlayerStats(PlayerStats stats)
     {
         ActStat = BaseStat = stats.PlayerBaseMoveSpeed;
+        MinModifierThreashold = stats.MinMoveModifierThreashold;
         SetPlayerMovement();
     }
 

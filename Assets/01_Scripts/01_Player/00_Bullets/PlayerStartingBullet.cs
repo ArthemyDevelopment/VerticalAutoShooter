@@ -1,4 +1,4 @@
-
+using System;
 using UnityEngine;
 
 public class PlayerStartingBullet : BasePlayerBullet
@@ -20,9 +20,9 @@ public class PlayerStartingBullet : BasePlayerBullet
         
     }
 
-    public override void OnHit(EnemyHealthManager ehm)
+    public override void OnHit(Action<float> DamageMethod)
     {
-        base.OnHit(ehm);
+        base.OnHit(DamageMethod);
         
     }
 

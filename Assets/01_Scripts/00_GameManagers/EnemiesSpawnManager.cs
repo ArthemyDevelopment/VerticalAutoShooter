@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[DefaultExecutionOrder(-1)]
+//[DefaultExecutionOrder(-1)]
 public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
 {
     [BoxGroup("Stats"),SerializeField] private List<Transform> SpawnPoints;
@@ -41,9 +41,8 @@ public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
         {
             yield return ScriptsTools.GetWait(ActSpawnTier.SpawnRate);
             int randPoint = Random.Range(0, SpawnPoints.Count);
-            int randEnemy = Random.Range(0, ActSpawnTier.EnemiesToSpawn.Count);
 
-            GameObject temp = Pools.current.GetObject(ActSpawnTier.EnemiesToSpawn[randEnemy]);
+            GameObject temp = Pools.current.GetObject(ActSpawnTier.GetEnemy());
             temp.transform.position = SpawnPoints[randPoint].position;
             temp.SetActive(true);
             temp.GetComponent<Rigidbody2D>().WakeUp();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-[DefaultExecutionOrder(-1)]
+//[DefaultExecutionOrder(-1)]
 public class Pools : SingletonManager<Pools>
 {
 

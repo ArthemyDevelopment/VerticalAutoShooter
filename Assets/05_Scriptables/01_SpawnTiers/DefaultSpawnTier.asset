@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: DefaultSpawnTier
   m_EditorClassIdentifier: 
   SpawnRate: 1.5
-  EnemiesToSpawn: 090000000c000000
+  EnemiesToSpawn:
+  - chance: 75
+    EnemyToSpawn: 9
+  - chance: 25
+    EnemyToSpawn: 12

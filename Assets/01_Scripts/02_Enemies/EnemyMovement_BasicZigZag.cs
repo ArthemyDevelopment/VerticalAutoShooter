@@ -1,11 +1,16 @@
 
 using System;
+using System.Numerics;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Random = UnityEngine.Random;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class EnemyMovement_BasicZigZag : EnemyMovement
 {
     [BoxGroup("ZigZag Movement")] public float ZigZagDistance;
+    [BoxGroup("ZigZag Movement")] public Vector2 HorizontalSpeedRange;
     [BoxGroup("ZigZag Movement")] public float HorizontalSpeed;
     public enum Directions { right, left, }
     [BoxGroup("ZigZag Movement")] public Directions MoveDir;
@@ -16,6 +21,7 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
     protected override void OnEnable()
     {
         base.OnEnable();
+        HorizontalSpeed = Random.Range(HorizontalSpeedRange.x, HorizontalSpeedRange.y);
         StartPosition = transform.position;
     }
 

@@ -5,29 +5,77 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VerticalAutoShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VerticalAutoShooter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameplayManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameplayManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/Pools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/Pools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/Pools.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/Pools.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ProgressManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ProgressManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ProgressManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ProgressManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/SpawnTier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/SpawnTier.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/00_Bullets/BasePlayerBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/00_Bullets/BasePlayerBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter_Basic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter_Basic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/00_Bullets/PlayerStartingBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/00_Bullets/PlayerStartingBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/01_PowerUps/PlayerPowerUps_Base.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/01_PowerUps/PlayerPowerUps_Base.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/IPlayerStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/IPlayerStates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerStatController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerStatController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerMovementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerShootingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerShootingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/DropChances.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/DropChances.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyHealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyHealthManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyMovement_BasicZigZag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyMovement_BasicZigZag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Enums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Structs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Structs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/01_ProjectileSpawner/ProjectileShooter_Basic_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/01_ProjectileSpawner/ProjectileShooter_Basic_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Structs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Structs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon01_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon01_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon01_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon01_04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon_Critical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/IconGroup_StatsIcon_Critical.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow01_PageNext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow01_PageNext.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow01_PagePrev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow01_PagePrev.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow_Continue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow_Continue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow_Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Arrow_Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Menu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Icon_WhiteIcon_Pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Triangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/Triangle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowDown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowLeft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowLeft.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowRight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/arrowUp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/barsVertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/barsVertical.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/minus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Art/plus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/GameCanvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player_Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player_Canvas.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicFalling_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicFalling_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicZigZag_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicZigZag_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/02_PowerUps/02_FireRate/PowerDown_FireRate_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/02_PowerUps/02_FireRate/PowerDown_FireRate_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/02_PowerUps/02_FireRate/PowerUp_FireRate_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/02_PowerUps/02_FireRate/PowerUp_FireRate_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/99_Misc/00_EnemiesDropsLoots.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/99_Misc/00_EnemiesDropsLoots/BasicSpeedLoot.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/99_Misc/00_EnemiesDropsLoots/BasicSpeedLoot.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicFalling_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicFalling_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicZigZag_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/01_Enemies/Enemy_BasicZigZag_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/00_EnemiesDropsLoots/BasicSpeedLoot.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/00_EnemiesDropsLoots/BasicSpeedLoot.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/01_SpawnTiers/DefaultSpawnTier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/05_Scriptables/01_SpawnTiers/DefaultSpawnTier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +85,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d0f92ebb771e4783b0ea9f13bfbe129b1a2000/01/0c417857/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameplayManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/Pools.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/SpawnTier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/00_Bullets/PlayerStartingBullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,7 +93,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/01_PowerUps/PlayerPowerUps_Base.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter_Basic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/03_HealthSystem/PlayerHealthBarController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerStatController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/DropChances.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyDrops.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyHealthManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,7 +177,12 @@
       <workItem from="1695275669750" duration="414000" />
       <workItem from="1695326686099" duration="13598000" />
       <workItem from="1695420244909" duration="11320000" />
-      <workItem from="1695486670339" duration="4209000" />
+      <workItem from="1695486670339" duration="4836000" />
+      <workItem from="1695762366901" duration="5386000" />
+      <workItem from="1695853478611" duration="9656000" />
+      <workItem from="1695871595790" duration="650000" />
+      <workItem from="1696103736171" duration="180000" />
+      <workItem from="1696103929932" duration="1179000" />
     </task>
     <servers />
   </component>

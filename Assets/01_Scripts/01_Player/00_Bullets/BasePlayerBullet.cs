@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public abstract class BasePlayerBullet : MonoBehaviour
@@ -25,17 +26,17 @@ public abstract class BasePlayerBullet : MonoBehaviour
         rb.velocity = transform.TransformDirection(Vector2.up*BulletSpeed);
     }
 
-    public virtual void OnHit(EnemyHealthManager ehm)
+    public virtual void OnHit(Action<float> DamageMethod)
     {
         Pools.current.StoreObject(thisBullet_Type,this.gameObject);
-        ehm.ApplyDamage(Damage);
+        DamageMethod(Damage);
     }
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
-            OnHit(other.GetComponent<EnemyHealthManager>());
+            OnHit(HitboxRecognitionSystem.GetDamage(other));
         }
         
         else if (other.CompareTag("OutOfScreen")||other.CompareTag("ScreenBorder"))

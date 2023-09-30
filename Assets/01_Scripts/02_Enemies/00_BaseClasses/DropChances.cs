@@ -25,7 +25,7 @@ public class DropChances : ScriptableObject
         {
             chanceSum += i.chance;
             if(roll>=chanceSum) continue;
-            Debug.Log(i.Item + " - Droped from roll: " +roll);
+//            Debug.Log(i.Item + " - Droped from roll: " +roll);
             return i.Item;
             break;
         }

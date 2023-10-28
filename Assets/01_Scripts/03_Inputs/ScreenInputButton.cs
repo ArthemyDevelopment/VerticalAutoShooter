@@ -20,10 +20,10 @@ public class ScreenInputButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
         switch (thisInput)
         {
             case InputList.Left:
-                UserInputManager.OnLeftGetInputDown.Invoke();
+                UserInputManager.OnLeftGetInputDown?.Invoke();
                 break;
             case InputList.Right:
-                UserInputManager.OnRightGetInputDown.Invoke();
+                UserInputManager.OnRightGetInputDown?.Invoke();
                 break;
         }
     }
@@ -33,10 +33,10 @@ public class ScreenInputButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
         switch (thisInput)
         {
             case InputList.Left:
-                UserInputManager.OnLeftGetInputUp.Invoke();
+                UserInputManager.OnLeftGetInputUp?.Invoke();
                 break;
             case InputList.Right:
-                UserInputManager.OnRightGetInputUp.Invoke();
+                UserInputManager.OnRightGetInputUp?.Invoke();
                 break;
         }        
     }

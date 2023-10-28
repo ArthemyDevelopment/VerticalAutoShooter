@@ -17,6 +17,6 @@ public class ProjectileShooter : MonoBehaviour
 
     public virtual void StopShooter()
     {
-        
+        CanShoot = false;
     }
 }

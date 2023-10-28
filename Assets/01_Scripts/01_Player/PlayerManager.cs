@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 //[DefaultExecutionOrder(-1)]
 public class PlayerManager : SingletonManager<PlayerManager>
 {
+
+    [FormerlySerializedAs("ResetGameEvent")] public EventObserver EventObserver;
 
     public PlayerMovementController movementController;
     public PlayerShootingController shootingController;
@@ -19,7 +22,9 @@ public class PlayerManager : SingletonManager<PlayerManager>
         playerControllers.Add(movementController);
         playerControllers.Add(shootingController);
         playerControllers.Add(healthManager);
-        InitPlayerStats();
+        EventObserver.OnResetGame += TriggerDeath;
+        EventObserver.OnStartGame += InitPlayerStats;
+        //InitPlayerStats();
     }
 
 
@@ -45,6 +50,15 @@ public class PlayerManager : SingletonManager<PlayerManager>
     {
         shootingController.ChangeShootingState(state);
     }
+
+    public void TriggerDeath()
+    {
+        movementController.SetPlayerDeath();
+        shootingController.StopShooting();
+
+    }
+
+
 }
 
 

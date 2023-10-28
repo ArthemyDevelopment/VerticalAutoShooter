@@ -8,8 +8,12 @@ public class EventObserver : ScriptableObject
     public delegate void IntCallback(int i);
     public delegate void FloatCallback(float f);
 
+    public delegate void VoidGameCallback();
+
     public IntCallback OnAddScore;
     public IntCallback OnRestScore;
+    public VoidGameCallback OnResetGame;
+    public VoidGameCallback OnStartGame;
 
     public void AddScore(int i)
     {
@@ -19,5 +23,16 @@ public class EventObserver : ScriptableObject
     public void RestScore(int i)
     {
         OnRestScore?.Invoke(i);
+    }
+
+    public void ResetGame()
+    {
+        Debug.Log("reset");
+        OnResetGame?.Invoke();
+    }
+
+    public void StartGame()
+    {
+        OnStartGame?.Invoke();
     }
 }

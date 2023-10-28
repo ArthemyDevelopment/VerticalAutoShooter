@@ -14,11 +14,13 @@ public class PlayerHealthBarController : HealthManager
     public override void SetHealth(int i)
     {
         base.SetHealth(i);
+        IsHealthBarDeath = false;
     }
 
     public override void DeathBehaviour()
     {
         IsHealthBarDeath = true;
+        GameManager.current.StopGame();
     }
 
     public override void AddHealth(float heal)
@@ -34,13 +36,8 @@ public class PlayerHealthBarController : HealthManager
 
     public override void ResetHealth()
     {
-        if (!IsHealthBarDeath)
-        {
-            base.ResetHealth();
+        base.ResetHealth();
             return;
-        } 
-        
-        //TODO: Behaviour when bar is death
     }
 
     public override void ApplyDamage(float damage)
@@ -54,6 +51,8 @@ public class PlayerHealthBarController : HealthManager
     {
         
     }
+    
+    
 
     public override void UpdateHealthGUI()
     {

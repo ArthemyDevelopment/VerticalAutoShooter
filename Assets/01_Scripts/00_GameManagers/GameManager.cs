@@ -2,24 +2,33 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class GameManager : MonoBehaviour
+
+public class GameManager : SingletonManager<GameManager>
 {
-    private void Awake()
+
+    [FormerlySerializedAs("ResetGameEvent")] public EventObserver EventObserver;
+
+
+    protected override void Awake()
     {
+        base.Awake();
         DontDestroyOnLoad(this.gameObject);
         Application.targetFrameRate = 120;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
+    }
+
+    
+
+    public void StarGame()
+    {
+        EventObserver.StartGame();
+        
+    }
+
+    public void StopGame()
+    {
+        EventObserver.ResetGame();
     }
 }

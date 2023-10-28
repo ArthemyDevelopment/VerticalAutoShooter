@@ -1,7 +1,6 @@
 
 using System;
 using Sirenix.OdinInspector;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -23,7 +22,7 @@ public class HealthManager : MonoBehaviour
 
 #endif
 
-    private void Awake()
+    protected virtual void Awake()
     {
         if (hitBox == null) hitBox = GetComponent<Collider2D>();
         HitboxRecognitionSystem.AddDamagableObject(hitBox, ApplyDamage);
@@ -47,12 +46,13 @@ public class HealthManager : MonoBehaviour
 
     protected virtual void OnEnable()
     {
-        ResetHealth();
+        //ResetHealth();
     }
 
     public virtual void SetHealth(int i)
     {
         BaseHealth = i;
+        ResetHealth();
     }
 
     public virtual void ResetHealth()

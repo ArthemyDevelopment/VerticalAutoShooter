@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 //[DefaultExecutionOrder(-1)]
 public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
 {
+    [FormerlySerializedAs("ResetGameEvent")] public EventObserver EventObserver;
+
     [BoxGroup("Stats"),SerializeField] private List<Transform> SpawnPoints;
     [BoxGroup("Stats"), SerializeField] private bool CanSpawn;
 
@@ -19,16 +22,18 @@ public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
 
     private void OnEnable()
     {
-        InitSpawner();
+        //InitSpawner();
+        EventObserver.OnResetGame += StopSpawner;
+        EventObserver.OnStartGame += InitSpawner;
     }
 
-    void InitSpawner()
+    public void InitSpawner()
     {
         CanSpawn = true;
         SpawnerLoop= StartCoroutine(SpawnLoop());
     }
 
-    void StopSpawner()
+    public void StopSpawner()
     {
         CanSpawn = false;
         StopCoroutine(SpawnerLoop);

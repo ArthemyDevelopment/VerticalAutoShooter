@@ -13,6 +13,7 @@ public class PlayerShootingController : PlayerStatController
     [FoldoutGroup("State"),SerializeField] private PlayerDobleShoot DobleShootState;
     [FoldoutGroup("State"),SerializeField] private PlayerTripleShoot TripleShootState;
     [FoldoutGroup("State"),SerializeField] private PlayerSideShoot SideShootState;
+    [FoldoutGroup("State"),SerializeField] private NoShooter DeathState;
     [FoldoutGroup("State")]  public IShootingState ActShootingState
     {
         get => _ShootingState;
@@ -32,11 +33,14 @@ public class PlayerShootingController : PlayerStatController
 
     public override void InitPlayerStats(PlayerStats stats)
     {
-        ActStat = BaseStat = stats.PlayerBaseFireRate;
+        BaseStat = stats.PlayerBaseFireRate;
         actPlayerBullet = stats.PlayerDefaultBullet;
         actPlayerShooter = stats.PlayerDefaultShooter;
         RepeatedStateBuff = stats.PlayerRepeatedShootingStateBuff;
         MinModifierThreashold = stats.MinFireRateModifierThreashold;
+        ActStat = BaseStat;
+        LastModifier = 1;
+        StateFireRateModifier = 1;
         ActShootingState = SingleShootState;
     }
 
@@ -60,6 +64,9 @@ public class PlayerShootingController : PlayerStatController
                 if (ActShootingState == SideShootState) ApplyModifier(RepeatedStateBuff);
                 else ActShootingState = SideShootState;
                 break;
+            case PlayerShootingStates.Death:
+                ActShootingState = DeathState;
+                break;
         }
 
         StateFireRateModifier = ActShootingState.StateFireRateModifier;
@@ -69,6 +76,11 @@ public class PlayerShootingController : PlayerStatController
     public override void UpdateStat()
     {
         ActStat = (BaseStat/StateFireRateModifier) / LastModifier;
+    }
+
+    public void StopShooting()
+    {
+        ChangeShootingState(PlayerShootingStates.Death);
     }
 
 }

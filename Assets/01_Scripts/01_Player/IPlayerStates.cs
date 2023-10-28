@@ -366,6 +366,33 @@ public class PlayerSideShoot : IShootingState
     }
 }
 
+[Serializable]
+public class NoShooter : IShootingState
+{
+    public override void OnEnterState(PlayerShootingController controller)
+    {
+        base.OnEnterState(controller);
+
+        
+    }
+
+    public override void OnUpdate()
+    {
+        base.OnUpdate();
+    }
+
+    public override void OnFixedUpdate()
+    {
+        base.OnFixedUpdate();
+    }
+
+    public override void OnExtiState()
+    {
+        base.OnExtiState();
+        
+    }
+}
+
 
 
 #endregion

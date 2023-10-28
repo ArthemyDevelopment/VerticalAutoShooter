@@ -4,6 +4,7 @@ public enum PlayerShootingStates
     Double,
     Triple,
     Side,
+    Death,
 }
 
 public enum Pools_Items

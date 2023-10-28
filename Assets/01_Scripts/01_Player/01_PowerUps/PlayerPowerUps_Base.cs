@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D),typeof(PolygonCollider2D))]
 public class PlayerPowerUps_Base : MonoBehaviour
 {
+    public EventObserver EventObserver;
     private Rigidbody2D rb;
 
     public float FallSpeed;
@@ -12,6 +13,7 @@ public class PlayerPowerUps_Base : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity= Vector2.down*FallSpeed;
+        EventObserver.OnResetGame += DestroyPowerUp;
     }
 
     public void OnTriggerEnter2D(Collider2D col)
@@ -19,10 +21,15 @@ public class PlayerPowerUps_Base : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             ApplyPowerUp(PlayerManager.current);
-            Destroy(this.gameObject);
+            DestroyPowerUp();
         }
         else if(col.CompareTag("BottomScreen"))
-            Destroy(this.gameObject);
+            DestroyPowerUp();
+    }
+
+    void DestroyPowerUp()
+    {
+        Destroy(this.gameObject);
     }
 
     protected virtual void ApplyPowerUp(PlayerManager PM)

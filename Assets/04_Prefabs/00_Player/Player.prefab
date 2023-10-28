@@ -179,8 +179,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b30f33c87549c44ac0fd39f66f5459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: playerControllers
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[IPlayerController, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  EventObserver: {fileID: 11400000, guid: b5d040d0adf4f0040a860d88b6c8861e, type: 2}
   movementController: {fileID: 5887757055726228201}
   shootingController: {fileID: 7682882234609730150}
+  healthManager: {fileID: 0}
   Stats: {fileID: 11400000, guid: e7eb978eef2d40d458ec73795344b033, type: 2}
 --- !u!114 &5887757055726228201
 MonoBehaviour:
@@ -239,6 +263,10 @@ MonoBehaviour:
     pc: {fileID: 0}
     ProjectilesShooters: []
     StateFireRateModifier: 0.85
+  DeathState:
+    pc: {fileID: 0}
+    ProjectilesShooters: []
+    StateFireRateModifier: 0
   StateFireRateModifier: 1
   actPlayerShooter: 0
   actPlayerBullet: 5

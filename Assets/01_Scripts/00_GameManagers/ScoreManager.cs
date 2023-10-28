@@ -2,12 +2,14 @@
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : SingletonManager<ScoreManager>
 { 
-    [SerializeField]private EventObserver EO;
+    
+    [FormerlySerializedAs("ScoreEvent")] [FormerlySerializedAs("EO")] [SerializeField]private EventObserver EventObserver;
     [SerializeField] private int _score;
-    private int Score
+    public int Score
     {
         get => _score;
         set
@@ -28,8 +30,10 @@ public class ScoreManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EO.OnAddScore += AddScore;
-        EO.OnRestScore += RestScore;
+        EventObserver.OnAddScore += AddScore;
+        EventObserver.OnRestScore += RestScore;
+        EventObserver.OnStartGame += ResetScore;
+        
         ResetScore();
     }
 

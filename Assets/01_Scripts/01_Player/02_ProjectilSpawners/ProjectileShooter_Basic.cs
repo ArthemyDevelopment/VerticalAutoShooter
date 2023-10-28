@@ -17,12 +17,13 @@ public class ProjectileShooter_Basic : ProjectileShooter
     
     private IEnumerator ShootingLoop()
     {
-        while (true)
+        while (CanShoot)
         {
             GameObject temp = Pools.current.GetObject(_controller.actPlayerBullet);
             temp.transform.position = transform.position;
             temp.transform.rotation = transform.rotation;
             temp.SetActive(true);
+            Debug.Log(_controller.ActStat);
             yield return ScriptsTools.GetWait(_controller.ActStat);
         }
     }

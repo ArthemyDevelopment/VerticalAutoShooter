@@ -495,6 +495,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  EventObserver: {fileID: 11400000, guid: b5d040d0adf4f0040a860d88b6c8861e, type: 2}
   SpawnPoints:
   - {fileID: 1543689025}
   - {fileID: 1871111945}
@@ -828,6 +829,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca795a1170ac824ab7771a99e2bbbf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  EventObserver: {fileID: 11400000, guid: b5d040d0adf4f0040a860d88b6c8861e, type: 2}
 --- !u!1 &1543689024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1019,10 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 981197331}
+    - target: {fileID: 5073835240551977697, guid: 302af59e31b24934b9a738e8e500d44d, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 5073835240551977697, guid: 302af59e31b24934b9a738e8e500d44d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1025,6 +1040,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 204526280604890787, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 467810555778701550, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 467810555778701550, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
     - target: {fileID: 1530107722747623178, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -1040,6 +1063,22 @@ PrefabInstance:
     - target: {fileID: 3115895593841790926, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -25.000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375464302931316231, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375464302931316231, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375464302931316231, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375464302931316231, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5859175171843938999, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_Pivot.x
@@ -1125,9 +1164,17 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6209138513808329043, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+    - target: {fileID: 6217471948994681042, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7490196
+      objectReference: {fileID: 0}
     - target: {fileID: 6249838332991765852, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6305847404124062236, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -214.54999
       objectReference: {fileID: 0}
     - target: {fileID: 6316841920392987020, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_Layer
@@ -1149,16 +1196,54 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 8031722688298221411, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1452836725}
+    - target: {fileID: 8031722688298221411, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StarGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031722688298221411, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031722688298221411, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8085575879263970157, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_Name
       value: OutOfScreenUp
       objectReference: {fileID: 0}
+    - target: {fileID: 8236309779592202736, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341963829399736579, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 8341963829399736579, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -364.99994
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488192688756159362, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: HealthBars.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488192688756159362, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: 'HealthBars.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488192688756159362, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+      propertyPath: 'HealthBars.Array.data[2]'
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 922872925687336431, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
+    - {fileID: 3946961978245990103, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7880b14c8ce38f7448f1204a1aa5d0e4, type: 3}

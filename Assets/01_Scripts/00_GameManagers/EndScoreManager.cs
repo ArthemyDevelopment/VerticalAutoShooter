@@ -45,7 +45,7 @@ public class EndScoreManager : MonoBehaviour
 
     public void PlayAgain()
     {
-        EventObserver.StartGame();
         Frame.SetActive(false);
+        GameManager.current.StarGame();
     }
 }

@@ -10,7 +10,7 @@ public class GameManager : SingletonManager<GameManager>
 
     [FormerlySerializedAs("ResetGameEvent")] public EventObserver EventObserver;
     public PlayerStats CurrentPlayer;
-
+    public BannerAd Ads;
 
     protected override void Awake()
     {
@@ -24,6 +24,8 @@ public class GameManager : SingletonManager<GameManager>
     {
         //TODO: SaveCurrPlayer system
         PlayerManager.current.SetPlayer(CurrentPlayer);
+        Ads.LoadBanner();
+        
     }
 
     public void ChangeCharacter(PlayerStats character)
@@ -38,11 +40,22 @@ public class GameManager : SingletonManager<GameManager>
     public void StarGame()
     {
         EventObserver.StartGame();
-        
+        HideAd();
     }
 
     public void StopGame()
     {
         EventObserver.ResetGame();
+        ShowAd();
+    }
+
+    public void ShowAd()
+    {
+        Ads.ShowBannerAd();
+    }
+
+    public void HideAd()
+    {
+        Ads.HideBannerAd();
     }
 }

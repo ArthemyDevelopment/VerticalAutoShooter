@@ -3,34 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="02b80623-bbe0-4642-a0f7-de835b3b9c10" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VerticalAutoShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VerticalAutoShooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.cmake/api/v1/reply/cache-v2-51cba23924baa067e840.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-3dfa6914011e21d2934e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.cmake/api/v1/reply/index-2023-09-23T18-31-33-0539.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/prefab_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/arm64-v8a/prefab_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab-configure/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab-configure/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab-configure/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab-configure/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/.utmp/Debug/83zx4r1s/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing/games-frame-pacingConfigVersion.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EnemiesSpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EventObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EventObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EndScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/EndScoreManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/HealthManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/00_GameManagers/ScoreManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/01_PowerUps/PlayerPowerUps_Base.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/01_PowerUps/PlayerPowerUps_Base.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter_Basic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/02_ProjectilSpawners/ProjectileShooter_Basic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/03_HealthSystem/PlayerHealthBarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/03_HealthSystem/PlayerHealthBarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/IPlayerStates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/IPlayerStates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerShootingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerShootingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/DropChances.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/DropChances.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyDamageController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyDamageController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyDrops.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyDrops.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyHealthManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyHealthManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/03_Inputs/ScreenInputButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/03_Inputs/ScreenInputButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/99_Misc/Enums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/GameCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Prefabs/00_Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/ScoreObserver.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/ScoreObserver.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/05_Scriptables/02_PlayerStats/BasePlayer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/05_Scriptables/02_PlayerStats/BasePlayer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/01_Player/PlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/00_BaseClasses/EnemyHealthManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/02_Enemies/EnemyMovement_BasicFalling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/05_Ads/BannerAd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Advertisement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/Enums/BannerPosition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@4.4.2/Runtime/Advertisement/IBanner.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,6 +136,7 @@
       <workItem from="1696103736171" duration="180000" />
       <workItem from="1696103929932" duration="2377000" />
       <workItem from="1698447410870" duration="9196000" />
+      <workItem from="1702242909144" duration="2308000" />
     </task>
     <servers />
   </component>

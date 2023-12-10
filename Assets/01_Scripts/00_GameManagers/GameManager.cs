@@ -9,6 +9,7 @@ public class GameManager : SingletonManager<GameManager>
 {
 
     [FormerlySerializedAs("ResetGameEvent")] public EventObserver EventObserver;
+    public PlayerStats CurrentPlayer;
 
 
     protected override void Awake()
@@ -19,7 +20,20 @@ public class GameManager : SingletonManager<GameManager>
         
     }
 
-    
+    private void Start()
+    {
+        //TODO: SaveCurrPlayer system
+        PlayerManager.current.SetPlayer(CurrentPlayer);
+    }
+
+    public void ChangeCharacter(PlayerStats character)
+    {
+        if (CurrentPlayer == character) return;
+
+        CurrentPlayer = character;
+        PlayerManager.current.SetPlayer(CurrentPlayer);
+    }
+
 
     public void StarGame()
     {

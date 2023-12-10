@@ -17,7 +17,7 @@ public class PlayerStartingBullet : BasePlayerBullet
     public override void Movement()
     {
         base.Movement();
-        
+        rb.velocity = transform.TransformDirection(Vector2.up*BulletSpeed);
     }
 
     public override void OnHit(Action<float> DamageMethod)

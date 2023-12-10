@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 
 //[DefaultExecutionOrder(-1)]
@@ -15,6 +16,7 @@ public class PlayerManager : SingletonManager<PlayerManager>
     public PlayerShootingController shootingController;
     public PlayerHealthManager healthManager;
     public PlayerStats Stats;
+    public SpriteRenderer PlayerSprite;
     [ShowInInspector]public List<IPlayerController> playerControllers= new List<IPlayerController>();
 
     private void OnEnable()
@@ -27,6 +29,11 @@ public class PlayerManager : SingletonManager<PlayerManager>
         //InitPlayerStats();
     }
 
+    public void SetPlayer(PlayerStats player)
+    {
+        Stats = player;
+        PlayerSprite.sprite = Stats.CharSprite;
+    }
 
     void InitPlayerStats()
     {

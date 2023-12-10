@@ -74,7 +74,7 @@ public class HealthManager : MonoBehaviour
     {
         if (ActHealth <= 0)
         {
-            OnDeath.Invoke();
+            OnDeath?.Invoke();
             DeathBehaviour();
         }
     }

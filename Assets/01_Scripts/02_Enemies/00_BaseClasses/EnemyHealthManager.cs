@@ -1,4 +1,5 @@
 
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -14,13 +15,19 @@ public class EnemyHealthManager : HealthManager
     protected override void Awake()
     {
         base.Awake();
-        EventObserver.OnResetGame += DestroyEnemy;
     }
 
     protected override void OnEnable()
     {
         base.OnEnable();
+        EventObserver.OnResetGame += DestroyEnemy;
         ResetHealth();
+    }
+
+    private void OnDisable()
+    {
+        EventObserver.OnResetGame -= DestroyEnemy;
+        
     }
 
     public override void DeathBehaviour()

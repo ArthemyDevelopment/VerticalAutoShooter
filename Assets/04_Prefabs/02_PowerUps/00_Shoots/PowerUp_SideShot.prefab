@@ -278,5 +278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79dfacd29247d5c45b955e10c8b410a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EventObserver: {fileID: 11400000, guid: b5d040d0adf4f0040a860d88b6c8861e, type: 2}
   FallSpeed: 3
   stateToChange: 3

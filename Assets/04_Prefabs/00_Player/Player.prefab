@@ -206,6 +206,7 @@ MonoBehaviour:
   shootingController: {fileID: 7682882234609730150}
   healthManager: {fileID: 0}
   Stats: {fileID: 11400000, guid: e7eb978eef2d40d458ec73795344b033, type: 2}
+  PlayerSprite: {fileID: 1253491079247176896}
 --- !u!114 &5887757055726228201
 MonoBehaviour:
   m_ObjectHideFlags: 0

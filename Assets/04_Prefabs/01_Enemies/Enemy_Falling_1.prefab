@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2589313343358437910, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: m_Name
-      value: Enemy_Template Variant
+      value: Enemy_Falling_1
       objectReference: {fileID: 0}
     - target: {fileID: 2833322060463020577, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: m_Sprite

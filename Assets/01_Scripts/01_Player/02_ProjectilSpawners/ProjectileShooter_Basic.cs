@@ -23,7 +23,7 @@ public class ProjectileShooter_Basic : ProjectileShooter
             temp.transform.position = transform.position;
             temp.transform.rotation = transform.rotation;
             temp.SetActive(true);
-            Debug.Log(_controller.ActStat);
+            //Debug.Log(_controller.ActStat);
             yield return ScriptsTools.GetWait(_controller.ActStat);
         }
     }

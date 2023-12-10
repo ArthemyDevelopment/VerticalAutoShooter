@@ -10,6 +10,8 @@ public class Pools : SingletonManager<Pools>
     public Dictionary<Pools_Items, Queue<GameObject>> _Pools= new Dictionary<Pools_Items, Queue<GameObject>>();
     public Dictionary<Pools_Items, GameObject> _Prefabs= new Dictionary<Pools_Items, GameObject>();
 
+    public Transform PoolPosition;
+
 
     public GameObject GetObject(Pools_Items item)
     {
@@ -29,6 +31,7 @@ public class Pools : SingletonManager<Pools>
 
     public void StoreObject(Pools_Items item, GameObject obj)
     {
+        obj.transform.position = PoolPosition.position;
         if (_Pools.ContainsKey(item))
         {
             obj.SetActive(false);
@@ -40,7 +43,10 @@ public class Pools : SingletonManager<Pools>
             obj.SetActive(false);
             _Pools[item].Enqueue(obj);
         }
+
     }
+    
+    
 
     
 

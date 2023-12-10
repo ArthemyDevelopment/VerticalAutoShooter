@@ -12,7 +12,7 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
     [BoxGroup("ZigZag Movement")] public float ZigZagDistance;
     [BoxGroup("ZigZag Movement")] public Vector2 HorizontalSpeedRange;
     [BoxGroup("ZigZag Movement")] public float HorizontalSpeed;
-    public enum Directions { right, left, }
+
     [BoxGroup("ZigZag Movement")] public Directions MoveDir;
 
     private Vector2 MoveVector;

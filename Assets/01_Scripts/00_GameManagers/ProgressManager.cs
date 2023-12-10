@@ -1,17 +1,20 @@
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 //[DefaultExecutionOrder(-1)]
 public class ProgressManager : SingletonManager<ProgressManager>
 {
-    [SerializeField] private Dictionary<int, SpawnTier> ProgressSpawn = new Dictionary<int, SpawnTier>();
+    [SerializeField]private Dictionary<int, SpawnTier> ProgressSpawn = new Dictionary<int, SpawnTier>();
 
     private List<int> DicKeys;
+    public EventObserver EventObserver;
 
     private void OnEnable()
     {
         DicKeys = new List<int>(ProgressSpawn.Keys);
+        EventObserver.OnStartGame += ResetProgress;
     }
 
     public void CheckProgress(int score)
@@ -33,6 +36,11 @@ public class ProgressManager : SingletonManager<ProgressManager>
         }
 
         return score;
+    }
+
+    void ResetProgress()
+    {
+        CheckProgress(0);
     }
     
 }

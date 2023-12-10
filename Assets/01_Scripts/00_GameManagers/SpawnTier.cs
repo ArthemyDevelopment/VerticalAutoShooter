@@ -14,6 +14,7 @@ public class SpawnTier : ScriptableObject
 
     public Pools_Items GetEnemy()
     {
+        //Debug.Log(name);
         int maxChances=0;
         foreach (EnemyChance i in EnemiesToSpawn)
         {

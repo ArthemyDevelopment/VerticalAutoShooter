@@ -39,3 +39,6 @@ public enum Pools_Items
     Enemies_Debuff_4,
     Enemies_Debuff_5,
 }
+
+
+public enum Directions { right, left, }

@@ -15,8 +15,12 @@ MonoBehaviour:
   PlayerBaseHealth: 10
   PlayerBaseMoveSpeed: 10
   MinMoveModifierThreashold: 0.5
-  PlayerBaseFireRate: 1
+  PlayerBaseFireRate: 10
   PlayerRepeatedShootingStateBuff: 1.1
   MinFireRateModifierThreashold: 0.5
   PlayerDefaultShooter: 5
-  PlayerDefaultBullet: 0
+  PlayerDefaultBullet: 3
+  CharSprite: {fileID: 21300000, guid: e1076c77bcc8728409c8cbfc2fb3796e, type: 3}
+  CharStats: 'Default Character
+
+    Base stats'

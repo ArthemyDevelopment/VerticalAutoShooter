@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items:
   - Item: {fileID: 0}
-    chance: 70
+    chance: 40
   - Item: {fileID: 4071630569523529679, guid: fcb7b58b5cd1c8e4f8db637094900f0b, type: 3}
     chance: 10
   - Item: {fileID: 4071630569523529679, guid: bdee0c9162a70ff46b28849b6087d757, type: 3}
     chance: 10
   - Item: {fileID: 4071630569523529679, guid: 981dd48ef5624374d8ccad58dc23e95e, type: 3}
     chance: 10
+  - Item: {fileID: 4071630569523529679, guid: ab8d9bdedb856ed4c89b3ed20894354e, type: 3}
+    chance: 15
+  - Item: {fileID: 4071630569523529679, guid: 095b9b0332dbfe24fac61bfe13398000, type: 3}
+    chance: 15

@@ -23,7 +23,7 @@ public abstract class BasePlayerBullet : MonoBehaviour
 
     public virtual void Movement()
     {
-        rb.velocity = transform.TransformDirection(Vector2.up*BulletSpeed);
+        
     }
 
     public virtual void OnHit(Action<float> DamageMethod)
@@ -43,5 +43,6 @@ public abstract class BasePlayerBullet : MonoBehaviour
         {
             Pools.current.StoreObject(thisBullet_Type,this.gameObject);
         }
+
     }
 }

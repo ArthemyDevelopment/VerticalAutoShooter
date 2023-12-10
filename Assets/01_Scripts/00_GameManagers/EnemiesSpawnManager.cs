@@ -44,13 +44,13 @@ public class EnemiesSpawnManager : SingletonManager<EnemiesSpawnManager>
     {
         while (CanSpawn)
         {
-            yield return ScriptsTools.GetWait(ActSpawnTier.SpawnRate);
             int randPoint = Random.Range(0, SpawnPoints.Count);
 
             GameObject temp = Pools.current.GetObject(ActSpawnTier.GetEnemy());
             temp.transform.position = SpawnPoints[randPoint].position;
             temp.SetActive(true);
             temp.GetComponent<Rigidbody2D>().WakeUp();
+            yield return ScriptsTools.GetWait(ActSpawnTier.SpawnRate);
             
         }
     }

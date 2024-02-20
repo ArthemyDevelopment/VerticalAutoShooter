@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GoogleMobileAds.Api.Mediation.UnityAds;
 using UnityEngine;
 using UnityEngine.Advertisements;
  
@@ -12,6 +13,8 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
  
     void Awake()
     {
+        UnityAds.SetConsentMetaData("gdpr.consent", true);
+        UnityAds.SetConsentMetaData("privacy.consent", true);
         InitializeAds();
     }
  

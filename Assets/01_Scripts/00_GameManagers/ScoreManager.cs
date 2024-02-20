@@ -33,7 +33,7 @@ public class ScoreManager : SingletonManager<ScoreManager>
         EventObserver.OnAddScore += AddScore;
         EventObserver.OnRestScore += RestScore;
         EventObserver.OnStartGame += ResetScore;
-        
+        EventObserver.OnEndGame += SaveScore;
         ResetScore();
     }
 
@@ -56,5 +56,15 @@ public class ScoreManager : SingletonManager<ScoreManager>
 
     {
         Score -= i;
+    }
+    
+    void SaveScore()
+    {
+        int HighScore = 0;
+        if (PlayerPrefs.HasKey("Score"))
+            HighScore = PlayerPrefs.GetInt("Score");
+        
+        if(Score>HighScore)
+            PlayerPrefs.SetInt("Score", Score);
     }
 }

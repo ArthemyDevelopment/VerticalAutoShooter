@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: 6923636744095984189, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: CurrentDropChances
       value: 
-      objectReference: {fileID: 11400000, guid: 82b1930760af1b242b35b7ef15bfc127, type: 2}
+      objectReference: {fileID: 11400000, guid: 97d8c8d3d2654534eb003b65ed974cfc, type: 2}
     - target: {fileID: 8239285387347142401, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: m_Sprite
       value: 

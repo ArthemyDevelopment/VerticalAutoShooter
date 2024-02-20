@@ -16,5 +16,3 @@ MonoBehaviour:
   EnemiesToSpawn:
   - chance: 75
     EnemyToSpawn: 9
-  - chance: 25
-    EnemyToSpawn: 12

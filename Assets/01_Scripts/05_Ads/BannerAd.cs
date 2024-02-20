@@ -13,7 +13,7 @@ public class BannerAd : MonoBehaviour
  
     [SerializeField] BannerPosition _bannerPosition = BannerPosition.BOTTOM_CENTER;
  
-    [SerializeField] string _androidAdUnitId = "Banner_Android";
+    [SerializeField] string _androidAdUnitId = "Test";
     [SerializeField] string _iOSAdUnitId = "Banner_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms.
  
@@ -27,14 +27,18 @@ public class BannerAd : MonoBehaviour
 #endif
 
         // Disable the button until an ad is ready to show:
-        _showBannerButton.interactable = false;
-        _hideBannerButton.interactable = false;
+        /*_showBannerButton.interactable = false;
+        _hideBannerButton.interactable = false;*/
  
         // Set the banner position:
         Advertisement.Banner.SetPosition(_bannerPosition);
  
         // Configure the Load Banner button to call the LoadBanner() method when clicked:
         _loadBannerButton.onClick.AddListener(LoadBanner);
+        // Configure the Show Banner button to call the ShowBannerAd() method when clicked:
+        _showBannerButton.onClick.AddListener(ShowBannerAd);
+        // Configure the Hide Banner button to call the HideBannerAd() method when clicked:
+        _hideBannerButton.onClick.AddListener(HideBannerAd);
         _loadBannerButton.interactable = true;
     }
  
@@ -57,10 +61,10 @@ public class BannerAd : MonoBehaviour
     {
         Debug.Log("Banner loaded");
  
-        // Configure the Show Banner button to call the ShowBannerAd() method when clicked:
+        /*// Configure the Show Banner button to call the ShowBannerAd() method when clicked:
         _showBannerButton.onClick.AddListener(ShowBannerAd);
         // Configure the Hide Banner button to call the HideBannerAd() method when clicked:
-        _hideBannerButton.onClick.AddListener(HideBannerAd);
+        _hideBannerButton.onClick.AddListener(HideBannerAd);*/
  
         // Enable both buttons:
         _showBannerButton.interactable = true;

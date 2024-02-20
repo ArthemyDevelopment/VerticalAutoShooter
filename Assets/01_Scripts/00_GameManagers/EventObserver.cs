@@ -14,6 +14,7 @@ public class EventObserver : ScriptableObject
     public IntCallback OnRestScore;
     public VoidGameCallback OnResetGame;
     public VoidGameCallback OnStartGame;
+    public VoidGameCallback OnEndGame;
 
     public void AddScore(int i)
     {
@@ -34,5 +35,10 @@ public class EventObserver : ScriptableObject
     public void StartGame()
     {
         OnStartGame?.Invoke();
+    }
+
+    public void EndGame()
+    {
+        OnEndGame?.Invoke();
     }
 }

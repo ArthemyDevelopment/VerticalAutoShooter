@@ -62,7 +62,7 @@ public class PlayerManager : SingletonManager<PlayerManager>
     {
         movementController.SetPlayerDeath();
         shootingController.StopShooting();
-
+        EventObserver.EndGame();
     }
 
 

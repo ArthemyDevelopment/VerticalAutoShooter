@@ -42,5 +42,7 @@ public class ProgressManager : SingletonManager<ProgressManager>
     {
         CheckProgress(0);
     }
+
+
     
 }

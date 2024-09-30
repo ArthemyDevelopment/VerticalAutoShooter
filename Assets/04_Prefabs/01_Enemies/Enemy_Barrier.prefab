@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8925304118025022281, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: BaseHealth
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8925304118025022281, guid: 8f379c8a1cdee2d40901340730ca39ba, type: 3}
       propertyPath: thisEnemy_Type
@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 0
-  MoveDownDistace: 9
+  StartingScale: {x: 0.1, y: 0.3, z: 1}
+  MoveDownDistace: {x: 6, y: 12}
   ScaleSize: 4
-  MoveTime: 1
+  MoveTime: 0.5
   ScaleTime: 0.2

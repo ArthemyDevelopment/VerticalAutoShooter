@@ -19,6 +19,12 @@ public class ProgressManager : SingletonManager<ProgressManager>
 
     public void CheckProgress(int score)
     {
+        if (score <= 0)
+        {
+            EnemiesSpawnManager.current.ActSpawnTier = ProgressSpawn[0];
+            return;
+        }
+        
         int LevelToCheck = GetKeyToCheck(score);
         
         if (ProgressSpawn.ContainsKey(LevelToCheck))

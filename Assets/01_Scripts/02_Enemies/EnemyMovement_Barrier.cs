@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class EnemyMovement_Barrier : EnemyMovement
 {
 
-    public float MoveDownDistace;
+    public Vector3 StartingScale;
+    public Vector2 MoveDownDistace;
     public float ScaleSize;
     public float MoveTime;
     public float ScaleTime;
@@ -18,10 +22,10 @@ public class EnemyMovement_Barrier : EnemyMovement
     private Vector2 startScale;
     private float startX;
     private float actX;
-
     protected override void OnEnable()
     {
         base.OnEnable();
+        transform.localScale = StartingScale;
     }
 
     public override void Movement()
@@ -35,8 +39,8 @@ public class EnemyMovement_Barrier : EnemyMovement
         float time = 0;
         startPosition= transform.position;
         startY = transform.position.y;
-        endValue = startPosition.y - MoveDownDistace;
-        
+        yield return endValue = startPosition.y - Random.Range(MoveDownDistace.x, MoveDownDistace.y); 
+
         while (time < duration)
         {
             actY = Mathf.Lerp(startY, endValue, time / duration);

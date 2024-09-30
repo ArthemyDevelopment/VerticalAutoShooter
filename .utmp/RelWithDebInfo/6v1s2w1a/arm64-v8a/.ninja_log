@@ -1,3 +1,21 @@
 # ninja log v5
-6	1836	7298166603433457	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4b9a866ce8afb820
-1840	3080	7298166613605927	E:/Unity Proyects/VerticalAutoShooter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6v1s2w1a/obj/arm64-v8a/libswappywrapper.so	c8fe1435ec4fb09b
+324	1267	7302578620036007	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4b9a866ce8afb820
+71	2258	7302578630181012	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e6de24a60b9bf93a
+1267	2031	7302578626919207	E:/Unity Proyects/VerticalAutoShooter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6v1s2w1a/obj/arm64-v8a/libswappywrapper.so	c8fe1435ec4fb09b
+227	1665	7302578623897310	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b04bfcc4534d4310
+4	1952	7302578627048878	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	16b8407a5f4a1901
+164	1613	7302578623697841	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d5751681f4ad1a04
+63	1685	7302578624136668	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c07d31c86ceda48d
+317	1948	7302578626839424	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3273183158c012a7
+116	2175	7302578629345077	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a6057316fb2c33ce
+2259	2538	7302578632068436	E:/Unity Proyects/VerticalAutoShooter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6v1s2w1a/obj/arm64-v8a/libgame.so	a87afa4f7ce04355
+114	445	7302584083360271	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	4b9a866ce8afb820
+76	1208	7302584089409845	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d5751681f4ad1a04
+83	1222	7302584089684497	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b04bfcc4534d4310
+67	1262	7302584090552358	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3273183158c012a7
+42	1271	7302584091455282	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c07d31c86ceda48d
+445	1417	7302584088098025	E:/Unity Proyects/VerticalAutoShooter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6v1s2w1a/obj/arm64-v8a/libswappywrapper.so	c8fe1435ec4fb09b
+54	1478	7302584093554983	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	16b8407a5f4a1901
+25	1732	7302584096252305	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a6057316fb2c33ce
+7	1783	7302584096762712	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e6de24a60b9bf93a
+1783	1994	7302584097798614	E:/Unity Proyects/VerticalAutoShooter/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6v1s2w1a/obj/arm64-v8a/libgame.so	a87afa4f7ce04355

@@ -32,7 +32,7 @@ public class EnemyHealthManager : HealthManager
 
     public override void DeathBehaviour()
     {
-        if(ActHealth<=0)EventObserver.AddScore(BaseHealth);
+        if(ActHealth<=0)EventObserver.AddScore(1);
         else EventObserver.RestScore(BaseHealth);
         DestroyEnemy();
     }

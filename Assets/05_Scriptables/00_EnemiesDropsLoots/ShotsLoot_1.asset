@@ -15,7 +15,7 @@ MonoBehaviour:
   Items:
   - Item: {fileID: 0}
     chance: 60
-  - Item: {fileID: 6697388035908402172, guid: bc1ccb7c0f83ebe40a68be65466ff606, type: 3}
+  - Item: {fileID: 4071630569523529679, guid: fcb7b58b5cd1c8e4f8db637094900f0b, type: 3}
     chance: 30
   - Item: {fileID: 4071630569523529679, guid: bdee0c9162a70ff46b28849b6087d757, type: 3}
     chance: 10

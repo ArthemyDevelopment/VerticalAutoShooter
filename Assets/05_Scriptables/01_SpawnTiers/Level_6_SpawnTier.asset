@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb430c5160651d4fa7cc71661c7b8c5, type: 3}
   m_Name: Level_6_SpawnTier
   m_EditorClassIdentifier: 
-  SpawnRate: 0.3
+  SpawnRate: 0.2
   EnemiesToSpawn:
   - chance: 33
     EnemyToSpawn: 10

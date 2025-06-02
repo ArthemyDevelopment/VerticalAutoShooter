@@ -17,10 +17,10 @@ public class PlayerStartingBullet : BasePlayerBullet
     public override void Movement()
     {
         base.Movement();
-        rb.velocity = transform.TransformDirection(Vector2.up*BulletSpeed);
+        rb.linearVelocity = transform.TransformDirection(Vector2.up*BulletSpeed);
     }
 
-    public override void OnHit(Action<float> DamageMethod)
+    public override void OnHit(Action<float, AnalyticCustomEvent> DamageMethod)
     {
         base.OnHit(DamageMethod);
         

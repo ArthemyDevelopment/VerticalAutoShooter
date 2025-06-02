@@ -13,9 +13,10 @@ public class HealthManager : MonoBehaviour
     [BoxGroup("Stats"),SerializeField, ReadOnly]protected float _actHealth;
     public UnityEvent OnDeath;
 
+    internal AnalyticCustomEvent OnDamageInfoAnalyticEvent;
 #if UNITY_EDITOR
 
-    [FoldoutGroup("DEBUG")][Button]public void DEBUG_ApplyDamage(float damage){ApplyDamage(damage);}
+    [FoldoutGroup("DEBUG")][Button]public void DEBUG_ApplyDamage(float damage){ApplyDamage(damage, null);}
     [FoldoutGroup("DEBUG")][Button]public void DEBUG_HealDamage(float damage){AddHealth(damage);}
     [FoldoutGroup("DEBUG")][Button]public void DEBUG_ResetHealth(){ResetHealth();}
     [FoldoutGroup("DEBUG")][Button] public void DEBUG_Kill() { ActHealth = 0;}
@@ -33,7 +34,7 @@ public class HealthManager : MonoBehaviour
         HitboxRecognitionSystem.RemoveDamagableObject(hitBox);
     }
 
-    protected float ActHealth
+    public float ActHealth
     {
         get => _actHealth;
         set
@@ -65,9 +66,10 @@ public class HealthManager : MonoBehaviour
         ActHealth += heal;
     }
 
-    public virtual void ApplyDamage(float damage)
+    public virtual void ApplyDamage(float damage, AnalyticCustomEvent analyticEvent)
     {
         ActHealth -= damage;
+        OnDamageInfoAnalyticEvent = analyticEvent;
     }
 
     public virtual void CheckDeath()
@@ -75,11 +77,11 @@ public class HealthManager : MonoBehaviour
         if (ActHealth <= 0)
         {
             OnDeath?.Invoke();
-            DeathBehaviour();
+            DeathBehaviour(OnDamageInfoAnalyticEvent);
         }
     }
 
-    public virtual void DeathBehaviour()
+    public virtual void DeathBehaviour(AnalyticCustomEvent analyticEvent)
     {
         
     }

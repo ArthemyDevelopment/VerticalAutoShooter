@@ -35,7 +35,7 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
         base.Movement();
         MoveVector.y = -Speed;
         SetSpeed();
-        rb.velocity = MoveVector;
+        rb.linearVelocity = MoveVector;
     }
 
     public void CheckHorPosition()
@@ -65,13 +65,13 @@ public class EnemyMovement_BasicZigZag : EnemyMovement
                 StartPosition = transform.position + Vector3.left * ZigZagDistance;
                 MoveDir = Directions.left;
                 SetSpeed();
-                rb.velocity = MoveVector;
+                rb.linearVelocity = MoveVector;
                 break;
             case Directions.left:
                 StartPosition = transform.position + Vector3.right * ZigZagDistance;
                 MoveDir = Directions.right;
                 SetSpeed();
-                rb.velocity = MoveVector;
+                rb.linearVelocity = MoveVector;
                 break;
         }
     }

@@ -1,7 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
+using Unity.Services.Core;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.Serialization;
 
 
@@ -17,7 +20,12 @@ public class GameManager : SingletonManager<GameManager>
         base.Awake();
         DontDestroyOnLoad(this.gameObject);
         Application.targetFrameRate = 120;
-        
+        UnityServices.InitializeAsync();
+    }
+
+    public void ConsentConfirmation()
+    {
+        AnalyticsService.Instance.StartDataCollection();
     }
 
     private void Start()
@@ -51,11 +59,13 @@ public class GameManager : SingletonManager<GameManager>
 
     public void ShowAd()
     {
-        Ads.ShowBannerAd();
+        if(Ads!=null&&Ads.gameObject.activeSelf)
+            Ads.ShowBannerAd();
     }
 
     public void HideAd()
     {
-        Ads.HideBannerAd();
+        if(Ads!=null&&Ads.gameObject.activeSelf)
+            Ads.HideBannerAd();
     }
 }

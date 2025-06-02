@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
+using Unity.Services.Analytics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,10 +18,22 @@ public class PlayerHealthBarController : HealthManager
         IsHealthBarDeath = false;
     }
 
-    public override void DeathBehaviour()
+    public override void DeathBehaviour(AnalyticCustomEvent analyticEvent)
     {
         IsHealthBarDeath = true;
         GameManager.current.StopGame();
+
+        AnalyticEvent_PlayerKilled deathEvent = new AnalyticEvent_PlayerKilled
+        {
+            entityName = OnDamageInfoAnalyticEvent.entityName,
+            EnemyRemainingHealth = (OnDamageInfoAnalyticEvent as AnalyticEvent_PlayerDamaged).EnemyRemainingHealth,
+            PowerUpName = (OnDamageInfoAnalyticEvent as AnalyticEvent_PlayerDamaged).PowerUpName,
+            ShootingFireRate = (OnDamageInfoAnalyticEvent as AnalyticEvent_PlayerDamaged).ShootingFireRate,
+
+        };
+        
+        AnalyticsService.Instance.RecordEvent(deathEvent);
+
     }
 
     public override void AddHealth(float heal)
@@ -40,11 +53,13 @@ public class PlayerHealthBarController : HealthManager
             return;
     }
 
-    public override void ApplyDamage(float damage)
+    public override void ApplyDamage(float damage, AnalyticCustomEvent analyticEvent)
     {
         if (IsHealthBarDeath) return;
         
-        base.ApplyDamage(damage);
+        AnalyticsService.Instance.RecordEvent(analyticEvent);
+        
+        base.ApplyDamage(damage,analyticEvent);
     }
 
     public void ReviveHealthBar()

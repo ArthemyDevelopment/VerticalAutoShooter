@@ -13,7 +13,7 @@ public class PlayerPowerUps_Base : MonoBehaviour
     private void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity= Vector2.down*FallSpeed;
+        rb.linearVelocity= Vector2.down*FallSpeed;
         EventObserver.OnResetGame += DestroyPowerUp;
     }
 

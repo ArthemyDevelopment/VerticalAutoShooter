@@ -79,7 +79,7 @@ public class PlayerMovementState : IMovementState
     public override void OnFixedUpdate()
     {
         base.OnFixedUpdate();
-        pc.rb.velocityX = (-HorizontalMove.x + HorizontalMove.y)*pc.ActStat;
+        pc.rb.linearVelocityX = (-HorizontalMove.x + HorizontalMove.y)*pc.ActStat;
     }
 
     public void SetPlayerMoveLeft()

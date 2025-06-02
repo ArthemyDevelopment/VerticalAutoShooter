@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class BasePlayerBullet : MonoBehaviour
 {
+    public Pools_Items ActPlayerShooter_Type;
+    
     public Pools_Items thisBullet_Type;
     public float Damage;
     public float BulletSpeed;
@@ -12,6 +14,7 @@ public abstract class BasePlayerBullet : MonoBehaviour
     public virtual void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
+        ActPlayerShooter_Type = PlayerManager.current.shootingController.actPlayerShooter;
     }
 
     public virtual void FixedUpdate()
@@ -26,10 +29,18 @@ public abstract class BasePlayerBullet : MonoBehaviour
         
     }
 
-    public virtual void OnHit(Action<float> DamageMethod)
+    public virtual void OnHit(Action<float,AnalyticCustomEvent> DamageMethod)
     {
         Pools.current.StoreObject(thisBullet_Type,this.gameObject);
-        DamageMethod(Damage);
+
+        AnalyticEvent_EnemyKilled EnemyKilledEvent = new AnalyticEvent_EnemyKilled
+        {
+            PowerUpName = thisBullet_Type.ToString(),
+            BulletName = ActPlayerShooter_Type.ToString(),
+        };
+    
+        
+        DamageMethod(Damage, EnemyKilledEvent);
     }
 
     public virtual void OnTriggerEnter2D(Collider2D other)
@@ -37,6 +48,10 @@ public abstract class BasePlayerBullet : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             OnHit(HitboxRecognitionSystem.GetDamage(other));
+            
+            
+            
+            
         }
         
         else if (other.CompareTag("OutOfScreen")||other.CompareTag("ScreenBorder"))

@@ -32,13 +32,13 @@ public class PlayerZigZagBullet : BasePlayerBullet
     public override void Movement()
     {
         base.Movement();
-        rb.velocity = transform.TransformDirection(Vector2.up*BulletSpeed);
+        rb.linearVelocity = transform.TransformDirection(Vector2.up*BulletSpeed);
         //SetSpeed();
         
         
     }
 
-    public override void OnHit(Action<float> DamageMethod)
+    public override void OnHit(Action<float, AnalyticCustomEvent> DamageMethod)
     {
         base.OnHit(DamageMethod);
         
@@ -94,7 +94,7 @@ public class PlayerZigZagBullet : BasePlayerBullet
                 MoveVector = transform.TransformDirection((Vector3.up*BulletSpeed));
                 break;
         }
-        rb.velocity = MoveVector;
+        rb.linearVelocity = MoveVector;
     }
     
     public override void OnTriggerEnter2D(Collider2D other)
